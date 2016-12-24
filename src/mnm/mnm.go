@@ -29,9 +29,18 @@ func main()  {
     fmt.Println("This is not your simple cli app - it can understand flags, too.\nBased on user input, the app returns a song of a certain genre.\n")
     fmt.Printf("Listen to ")
 
-    if genre == "rap" {
+    /*if genre == "rap" {
       fmt.Printf("Kanye West - New Slaves")
     } else {
+      fmt.Printf("Marhsmello - Alone")
+    }*/
+
+    switch genre {
+    case "rap":
+      fmt.Printf("Kanye West - New Slaves")
+    case "house":
+      fmt.Printf("Doorly feat. Marshall Jefferson - Neanderthal")
+    default:
       fmt.Printf("Marhsmello - Alone")
     }
 
